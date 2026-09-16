@@ -1,0 +1,9 @@
+Dependencies for Project 'dactest', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5040049::V5.04 update 1 (build 49)::ARMCC
+F (.\Startup.s)(0x55AF141C)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 538"--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\dac.c)(0x6854EF93)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="538"-o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+I (C:\Keil_v5\ARM\INC\Philips\LPC214X.H)(0x53208DB6)
+I (lcd.h)(0x572C2BA2)
+F (.\lcd.c)(0x572C2CD4)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="538"-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (C:\Keil_v5\ARM\INC\Philips\LPC214x.h)(0x53208DB6)
+F (.\lcd.h)(0x572C2BA2)()
