@@ -1,0 +1,12 @@
+Dependencies for Project 'ADC', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5040049::V5.04 update 1 (build 49)::ARMCC
+F (.\Startup.s)(0x6A4B35CD)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips--pd "__UVISION_VERSION SETA 538"-o .\startup.o --depend .\startup.d)
+F (.\main_ADC_Test.c)(0x6A4B35CD)(-c --cpu ARM7TDMI -D__EVAL -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="538"-o .\main_adc_test.o --omf_browse .\main_adc_test.crf --depend .\main_adc_test.d)
+I (C:\Keil_v5\ARM\INC\Philips\LPC214x.H)(0x531FDDEE)
+I (ADC_Driver.c)(0x6A4B35CD)
+I (lcd.c)(0x6A4B35CD)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x52FDF5A6)
+F (.\lcd.c)(0x6A4B35CD)(-c --cpu ARM7TDMI -D__EVAL -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="538"-o .\lcd.o --omf_browse .\lcd.crf --depend .\lcd.d)
+I (C:\Keil_v5\ARM\INC\Philips\LPC214x.h)(0x531FDDEE)
+F (.\ADC_Driver.c)(0x6A4B35CD)(-c --cpu ARM7TDMI -D__EVAL -g -O0-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\INC\Philips-D__UVISION_VERSION="538"-o .\adc_driver.o --omf_browse .\adc_driver.crf --depend .\adc_driver.d)
+I (C:\Keil_v5\ARM\INC\Philips\LPC214x.H)(0x531FDDEE)

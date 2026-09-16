@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: rit t, ttt, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.10.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.04 update 1 (build 49)
+Assembler:       Armasm.exe V5.04 update 1 (build 49)
+Linker/Locator:  ArmLink.exe V5.04 update 1 (build 49)
+Library Manager: ArmAr.exe V5.04 update 1 (build 49)
+Hex Converter:   FromElf.exe V5.04 update 1 (build 49)
+CPU DLL:         SARM.DLL V5.10.0.0
+Dialog DLL:      DARMP.DLL V1.51
+Target DLL:      UL2ARM.DLL V1.74.5.0
+Dialog DLL:      TARMP.DLL V1.51
+ 
+<h2>Project:</h2>
+C:\Users\user\Downloads\ARM NEW PROGRAMS-20260706T045634Z-3-001\ARM NEW PROGRAMS\2.ADC\ADC.uvproj
+Project File Date:  07/06/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.04 update 1 (build 49)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling ADC_Driver.c...
+compiling lcd.c...
+compiling main_ADC_Test.c...
+main_ADC_Test.c(30): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+  	 sprintf(buf,"%d",temp);
+main_ADC_Test.c: 1 warning, 0 errors
+linking...
+.\ADC.axf: Error: L6200E: Symbol thousands multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol hundreds multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol tens multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol ones multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol ADCInit multiply defined (by adc_driver.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol ADC_StartConversion multiply defined (by adc_driver.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol ADC_StopConversion multiply defined (by adc_driver.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol ADC_ReadChannel multiply defined (by adc_driver.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol wait multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol lcdcmd multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol lcdinit multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol gotoxy multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol lcddat multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol printstr multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol clrscr multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol split_numbers multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol Wait_Msg multiply defined (by lcd.o and main_adc_test.o).
+.\ADC.axf: Error: L6200E: Symbol Welcome_Msg multiply defined (by lcd.o and main_adc_test.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 18 error messages.
+".\ADC.axf" - 18 Error(s), 1 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

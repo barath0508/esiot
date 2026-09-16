@@ -1,0 +1,17 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\ARM&VLSI\LPC2148 VERSION 1.6\LPC2148 VERSION 1.6\PROGRAMS\ADC\ADC.uvproj
+Project File Date:  05/05/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling main_ADC_Test.c...
+main_ADC_Test.c(30): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+linking...
+Program Size: Code=3264 RO-data=32 RW-data=16 ZI-data=1256  
+FromELF: creating hex file...
+"ADC.axf" - 0 Error(s), 1 Warning(s).
