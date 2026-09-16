@@ -1,0 +1,78 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 09/16/2026 21:37:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main.a51 SET(SMALL) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\Objects\m
+                      ain.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+                       2     
+                       3     ; Addition
+0000 7425              4     MOV A, #25H
+0002 7812              5     MOV R0, #12H
+0004 28                6     ADD A, R0
+0005 F9                7     MOV R1, A
+                       8     
+                       9     ; Subtraction
+0006 7425             10     MOV A, #25H
+0008 C3               11     CLR C
+0009 98               12     SUBB A, R0
+000A FA               13     MOV R2, A
+                      14     
+                      15     ; Multiplication
+000B 7406             16     MOV A, #06H
+000D 75F003           17     MOV B, #03H
+0010 A4               18     MUL AB
+0011 FB               19     MOV R3, A
+                      20     
+                      21     ; Division
+0012 7410             22     MOV A, #10H
+0014 75F004           23     MOV B, #04H
+0017 84               24     DIV AB
+0018 FC               25     MOV R4, A
+0019 ADF0             26     MOV R5, B
+                      27     
+                      28     ; AND
+001B 74F0             29     MOV A, #0F0H
+001D 54AA             30     ANL A, #0AAH
+001F FE               31     MOV R6, A
+                      32     
+                      33     ; OR
+0020 74F0             34     MOV A, #0F0H
+0022 44AA             35     ORL A, #0AAH
+0024 FF               36     MOV R7, A
+                      37     
+                      38     ; XOR
+0025 74F0             39     MOV A, #0F0H
+0027 64AA             40     XRL A, #0AAH
+0029 F530             41     MOV 30H, A
+                      42     
+                      43     ; Increment and Decrement
+002B 7409             44     MOV A, #09H
+002D 04               45     INC A
+002E 14               46     DEC A
+002F F531             47     MOV 31H, A
+                      48     
+0031                  49     HERE:
+0031 80FE             50     SJMP HERE
+                      51     
+                      52     END
+A51 MACRO ASSEMBLER  MAIN                                                                 09/16/2026 21:37:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+HERE . . . . . . .  C ADDR   0031H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
