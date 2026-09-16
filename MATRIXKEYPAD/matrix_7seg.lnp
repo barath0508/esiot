@@ -1,0 +1,8 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\matrix_7seg_driver.o"
+".\main.o"
+--strict --scatter ".\matrix_7seg.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\matrix_7seg.map" -o .\matrix_7seg.axf
